@@ -34,7 +34,6 @@ function exercise6(input, input2) {
   para2.style.backgroundColor = '#282828';
   para2.style.borderRadius = '5px';
   para2.style.textAlign = 'center';
-  para2.innerText = input;
   para2.textContent = input2;
 
   div.append(para2);
