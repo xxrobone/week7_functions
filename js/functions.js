@@ -44,8 +44,27 @@ exercise6(exercise2());
 
 //exercise 9 // exercise 10 adding exercise 2 with names
 function exercise9() {
-    for (let i = 0; i < names.length; i++) {
-      console.log(exercise2(names[i]));
-    }
+  for (let i = 0; i < names.length; i++) {
+    console.log(exercise2(names[i]));
   }
-  exercise9();
+}
+exercise9();
+
+// exercise11
+function exercise11() {
+  for (let i = 0; i < names.length; i++) {
+    console.log(
+      `%c ${exercise2(names[i])}`,
+      'color: #990099; background: #f8f8f8'
+    );
+    let div = document.querySelector('#exercise11');
+    let para = document.createElement('p');
+    para.style.color = 'green';
+    para.style.backgroundColor = '#f8f8f8';
+    para.style.borderRadius = '5px';
+    para.style.textAlign = 'center';
+    para.innerText = exercise2(names[i]);
+    div.appendChild(para);
+  }
+}
+exercise11();
