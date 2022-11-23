@@ -52,19 +52,26 @@ exercise9();
 
 // exercise11
 function exercise11() {
-  for (let i = 0; i < names.length; i++) {
+  if (Array.isArray(names)) {
+    for (let i = 0; i < names.length; i++) {
+      console.log(
+        `%c ${exercise2(names[i])}`,
+        'color: #990099; background: #f8f8f8'
+      );
+      let div = document.querySelector('#exercise11');
+      let para = document.createElement('p');
+      para.style.color = 'green';
+      para.style.backgroundColor = '#f8f8f8';
+      para.style.borderRadius = '5px';
+      para.style.textAlign = 'center';
+      para.innerText = exercise2(names[i]);
+      div.appendChild(para);
+    }
+  } else {
     console.log(
-      `%c ${exercise2(names[i])}`,
-      'color: #990099; background: #f8f8f8'
+      ' %c OBS! This is not an array, please use and array',
+      'color: black; background: tomato'
     );
-    let div = document.querySelector('#exercise11');
-    let para = document.createElement('p');
-    para.style.color = 'green';
-    para.style.backgroundColor = '#f8f8f8';
-    para.style.borderRadius = '5px';
-    para.style.textAlign = 'center';
-    para.innerText = exercise2(names[i]);
-    div.appendChild(para);
   }
 }
 exercise11();
@@ -79,11 +86,37 @@ function exercise13() {
   }
 }
 exercise13();
-// exercise 14
 
+// exercise 14
 function exercise14() {
   for (let i = 0; i < names.length; i++) {
     console.log(`%c ${names[i].length}`, 'color: red; background: black');
   }
 }
 exercise14();
+
+// exercise 15
+function exercise15() {
+  for (let i = 0; i < names.length; i++) {
+    let str = 'includes an S';
+    if (names[i].includes('s')) {
+      console.log(`%c ${names[i]} ${str}`, 'color: pink; background: red');
+    } else {
+      console.log(`%c ${names[i]}`, 'color: pink; background: orangered');
+    }
+  }
+}
+exercise15();
+
+
+// testing so that array is an array :D
+function test() {
+  if (Array.isArray(names)) {
+    names.forEach(function (value) {
+      console.log(value);
+    });
+  } else {
+    console.log('not an array');
+  }
+}
+test(names);
