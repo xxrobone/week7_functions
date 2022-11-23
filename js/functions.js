@@ -68,3 +68,22 @@ function exercise11() {
   }
 }
 exercise11();
+
+// exercise 13
+function exercise13() {
+  for (let i = 0; i < names.length; i++) {
+    console.log(
+      `%c ${names[i].toUpperCase()}`,
+      'color: yellow; background: #121212'
+    );
+  }
+}
+exercise13();
+// exercise 14
+
+function exercise14() {
+  for (let i = 0; i < names.length; i++) {
+    console.log(`%c ${names[i].length}`, 'color: red; background: black');
+  }
+}
+exercise14();
