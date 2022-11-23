@@ -43,7 +43,7 @@ exercise6('Here I AM!', exercise2('Milo', 'Waegar'));
 exercise6('', exercise2('Milo'));
 exercise6(exercise2());
 
-//exercise 9 // exercise 10
+//exercise 9 // exercise 10 adding exercise 2 with names
 function exercise9() {
     for (let i = 0; i < names.length; i++) {
       console.log(exercise2(names[i]));
