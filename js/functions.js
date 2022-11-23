@@ -17,16 +17,17 @@ function exercise2(name = 'Alex', lastname = name + 'sson') {
 
 console.log(exercise2('Milo'));
 
-// exercise 6
-function exercise6() {
+// exercise 6 // exercise 7
+function exercise6(input) {
   let div = document.querySelector('#exercise6');
   let para = document.createElement('p');
   para.style.color = 'black';
   para.style.backgroundColor = '#f8f8f8';
   para.style.borderRadius = '5px';
   para.style.textAlign = 'center';
-  para.innerText = 'Here I AM!';
-
+  para.innerText = input;
   div.appendChild(para);
 }
-exercise6();
+exercise6('Here I AM!');
+
+// exercise 7
