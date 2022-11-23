@@ -17,4 +17,16 @@ function exercise2(name = 'Alex', lastname = name + 'sson') {
 
 console.log(exercise2('Milo'));
 
-// exercise 4
+// exercise 6
+function exercise6() {
+  let div = document.querySelector('#exercise6');
+  let para = document.createElement('p');
+  para.style.color = 'black';
+  para.style.backgroundColor = '#f8f8f8';
+  para.style.borderRadius = '5px';
+  para.style.textAlign = 'center';
+  para.innerText = 'Here I AM!';
+
+  div.appendChild(para);
+}
+exercise6();
