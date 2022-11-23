@@ -2,14 +2,6 @@
 let names = ['Alex', 'Sam', 'John', 'Lucia', 'Marco', 'Kristina'];
 let rndName = names[Math.floor(Math.random() * names.length)];
 
-//exercise 9
-function exercise9() {
-  for (let i = 0; i < names.length; i++) {
-    console.log(names[i]);
-  }
-}
-exercise9();
-
 // Your code here
 
 // exercise 1
@@ -50,3 +42,11 @@ function exercise6(input, input2) {
 exercise6('Here I AM!', exercise2('Milo', 'Waegar'));
 exercise6('', exercise2('Milo'));
 exercise6(exercise2());
+
+//exercise 9 // exercise 10
+function exercise9() {
+    for (let i = 0; i < names.length; i++) {
+      console.log(exercise2(names[i]));
+    }
+  }
+  exercise9();
