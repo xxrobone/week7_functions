@@ -18,7 +18,7 @@ function exercise2(name = 'Alex', lastname = name + 'sson') {
 
 console.log(exercise2('Milo'));
 
-// exercise 6 // exercise 7
+// exercise 6 // exercise 7 // exercise 8
 function exercise6(input, input2) {
   let div = document.querySelector('#exercise6');
   let para = document.createElement('p');
@@ -43,4 +43,4 @@ exercise6('Here I AM!', exercise2('Milo', 'Waegar'));
 exercise6('', exercise2('Milo'));
 exercise6(exercise2());
 
-// exercise 7
+
