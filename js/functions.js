@@ -108,6 +108,27 @@ function exercise15() {
 }
 exercise15();
 
+// exercise 16
+function exercise16() {
+  let div = document.querySelector('#exercise16');
+  for (let i = 0; i < names.length; i++) {
+    let para = document.createElement('p');
+    para.textContent = names[i];
+    para.style.color = 'tomato';
+    if (names[i].toLowerCase().includes('a')) {
+      para.textContent =
+        names[i] +
+        ' / ' +
+        'the letter a is at index: ' +
+        names[i].toLowerCase().indexOf('a');
+      para.style.color = 'lightgreen';
+    } else {
+      console.log('These names have no A´s: ' + names[i]);
+    }
+    div.append(para);
+  }
+}
+exercise16();
 
 // testing so that array is an array :D
 function test() {
