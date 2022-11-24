@@ -114,7 +114,7 @@ function exercise16(input) {
     input.forEach(function (value) {
       let div = document.querySelector('#exercise16');
       let para = document.createElement('p');
-      para.textContent = value;
+      para.textContent = value + ' this name has no a';
       para.style.color = 'tomato';
       if (value.toLowerCase().includes('a')) {
         para.textContent =
