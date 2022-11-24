@@ -135,7 +135,22 @@ exercise16(names);
 // exercise 17
 // regex
 
-function exersice17(input) {}
+function exersice17(input) {
+  let onlyLetters = /^[A-Za-z]*$/;
+  let onlyNumbers = /^[0-9]*$/;
+  let threeLettersFollowedByThreeNumbers = /^[A-Za-z]{3}[0-9]{3}$/;
+}
+/* 
+function exercise18() {
+  let userInput = prompt('Enter 5 letters');
+  let pattern = /[A-Ö]{5}/i;
+  if (userInput.match(pattern) && userInput.length === 5) {
+    alert('Passed');
+  } else {
+    alert("didn't pass");
+  }
+}
+exercise18(); */
 
 // testing so that array is an array :D
 function test() {
